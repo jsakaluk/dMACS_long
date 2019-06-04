@@ -57,7 +57,7 @@ dMACS.long<- function(fit.cfa){
   
   # latent variance ---------------------------------------------------------
   fcl_lt_vrnc <- lavaan::inspect(fit.cfa, what = "est") %>%
-    .$theta
+    .$psi
   fcl_lt_vrnc <- fcl_lt_vrnc[2,2]
   ## create functions to calculate the mean predicted response
   
